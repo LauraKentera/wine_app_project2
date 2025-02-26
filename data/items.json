@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "name": "Château Margaux",
+    "type": "Red Wine",
+    "year": 2015,
+    "region": "Bordeaux, France",
+    "description": "A full-bodied red wine with rich tannins and notes of blackberry and oak.",
+    "image": "chateau_margaux.png",
+    "rating": 4.7,
+    "topNotes": [
+      { "icon": "fa-lemon", "note": "Citrus" },
+      { "icon": "fa-leaf", "note": "Herbal" },
+      { "icon": "fa-bolt", "note": "Spicy" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cloudy Bay Sauvignon Blanc",
+    "type": "White Wine",
+    "year": 2020,
+    "region": "Marlborough, New Zealand",
+    "description": "A crisp white wine with citrus and tropical fruit flavors, balanced acidity.",
+    "image": "cloudy_bay.png",
+    "rating": 4.3,
+    "topNotes": [
+      { "icon": "fa-lemon", "note": "Citrus" },
+      { "icon": "fa-sun", "note": "Tropical" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dom Pérignon Vintage",
+    "type": "Sparkling Wine",
+    "year": 2012,
+    "region": "Champagne, France",
+    "description": "A luxurious champagne with notes of almond, citrus, and brioche.",
+    "image": "dom_perignon.png",
+    "rating": 4.8,
+    "topNotes": [
+      { "icon": "fa-wine-glass-alt", "note": "Bubbly" },
+      { "icon": "fa-star", "note": "Elegant" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Antinori Tignanello",
+    "type": "Red Wine",
+    "year": 2018,
+    "region": "Tuscany, Italy",
+    "description": "A rich and elegant red wine with flavors of cherry, spice, and vanilla.",
+    "image": "tignanello.png",
+    "rating": 4.5,
+    "topNotes": [
+      { "icon": "fa-apple-alt", "note": "Cherry" },
+      { "icon": "fa-pepper-hot", "note": "Spicy" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Vega Sicilia Unico",
+    "type": "Red Wine",
+    "year": 2010,
+    "region": "Ribera del Duero, Spain",
+    "description": "An exquisite Spanish wine with deep flavors of dark fruit, tobacco, and leather.",
+    "image": "vega_sicilia.png",
+    "rating": 4.6,
+    "topNotes": [
+      { "icon": "fa-wine-glass", "note": "Fruity" },
+      { "icon": "fa-seedling", "note": "Earthy" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Château d'Yquem",
+    "type": "Dessert Wine",
+    "year": 2009,
+    "region": "Sauternes, France",
+    "description": "A sweet and elegant wine with notes of honey, apricot, and caramel.",
+    "image": "chateau_yquem.png",
+    "rating": 4.9,
+    "topNotes": [
+      { "icon": "fa-brands fa-forumbee", "note": "Honey" },
+      { "icon": "fa-apple-alt", "note": "Apricot" },
+      { "icon": "fa-solid fa-cubes-stacked", "note": "Caramel" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Gaja Barbaresco",
+    "type": "Red Wine",
+    "year": 2017,
+    "region": "Piedmont, Italy",
+    "description": "A refined and complex wine with notes of red berries, licorice, and oak.",
+    "image": "gaja_barbaresco.png",
+    "rating": 4.4,
+    "topNotes": [
+      { "icon": "fa-apple-alt", "note": "Berries" },
+      { "icon": "fa-tree", "note": "Oak" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Sassicaia",
+    "type": "Red Wine",
+    "year": 2016,
+    "region": "Tuscany, Italy",
+    "description": "A Super Tuscan wine with flavors of dark fruit, leather, and spice.",
+    "image": "sassicaia.png",
+    "rating": 4.5,
+    "topNotes": [
+      { "icon": "fa-trophy", "note": "Award-Winning" },
+      { "icon": "fa-martini-glass", "note": "Sophisticated" }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Penfolds Grange",
+    "type": "Red Wine",
+    "year": 2014,
+    "region": "South Australia, Australia",
+    "description": "A powerful Australian wine with deep flavors of plum, mocha, and spice.",
+    "image": "penfolds_grange.png",
+    "rating": 4.6,
+    "topNotes": [
+      { "icon": "fa-coffee", "note": "Mocha" },
+      { "icon": "fa-fire", "note": "Spicy" }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Opus One",
+    "type": "Red Wine",
+    "year": 2019,
+    "region": "Napa Valley, USA",
+    "description": "A prestigious Napa Valley wine with notes of cassis, violets, and graphite.",
+    "image": "opus_one.png",
+    "rating": 4.7,
+    "topNotes": [
+      { "icon": "fa-vial", "note": "Complex" },
+      { "icon": "fa-flask", "note": "Innovative" }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Château Latour",
+    "type": "Red Wine",
+    "year": 2012,
+    "region": "Bordeaux, France",
+    "description": "A powerful Bordeaux with intense flavors of blackcurrant, cedar, and tobacco.",
+    "image": "chateau_latour.png",
+    "rating": 4.8,
+    "topNotes": [
+      { "icon": "fa-wine-glass-alt", "note": "Intense" },
+      { "icon": "fa-leaf", "note": "Herbal" },
+      { "icon": "fa-star", "note": "Elegant" }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Dominus Estate",
+    "type": "Red Wine",
+    "year": 2015,
+    "region": "Napa Valley, USA",
+    "description": "A robust Napa Valley wine with layers of dark fruit, oak, and a hint of spice.",
+    "image": "dominus_estate.png",
+    "rating": 4.7,
+    "topNotes": [
+      { "icon": "fa-trophy", "note": "Award-Winning" },
+      { "icon": "fa-wine-glass", "note": "Complex" },
+      { "icon": "fa-fire", "note": "Spicy" }
+    ]
+  }
+
+]

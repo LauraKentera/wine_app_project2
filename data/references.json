@@ -1,0 +1,96 @@
+{
+  "imageReferences": [
+    {
+      "title": "Château Margaux",
+      "url": "https://vina-acrobat.hr/proizvod/chateau-margaux-2020/"
+    },
+    {
+      "title": "Penfolds Grange 2019",
+      "url": "https://www.penfolds.com/en/grange-2019-8083544.html"
+    },
+    {
+      "title": "Opus One 2019",
+      "url": "https://moments.hr/product/opus-one-2019/"
+    },
+    {
+      "title": "Cloudy Bay Sauvignon Blanc 2022",
+      "url": "https://www.cloudybay.com/en-ww/our-wines/sauvignon-blanc/sauvignon-blanc-2022/"
+    },
+    {
+      "title": "Tenuta San Guido Sassicaia 2020",
+      "url": "https://www.millesima-usa.com/tenuta-san-guido-sassicaia-2020.html"
+    },
+    {
+      "title": "Sori Tilden Barbaresco Gaja 2017",
+      "url": "https://coolersomm.com/products/2017-sori-tilden-barbaresco-gaja"
+    },
+    {
+      "title": "Château d'Yquem 2007",
+      "url": "https://www.millesima.com/chateau-d-yquem-2007.html"
+    },
+    {
+      "title": "Vega Sicilia Unico",
+      "url": "https://www.temposvegasicilia.com/en/wine/234/unico"
+    },
+    {
+      "title": "Antinori Tignanello",
+      "url": "https://www.antinori.it/en/vino/tignanello-en/"
+    },
+    {
+      "title": "Dom Pérignon Vintage 2012",
+      "url": "https://www.millesima.com/champagne-dom-perignon-vintage-2012.html"
+    },
+    {
+      "title": "Moueix Dominus Estate 2019",
+      "url": "https://moments.hr/product/moueix-dominus-estate-2019/"
+    },
+    {
+      "title": "Château Latour",
+      "url": "https://www.vinissimus.co.uk/en/wine/chateau-latour/"
+    }
+  ],
+  "backgroundReferences": [
+    {
+      "title": "Landing Page Background 1",
+      "credit": "Tim Mossholder",
+      "creditUrl": "https://unsplash.com/@timmossholder?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+      "imageUrl": "https://unsplash.com/photos/plants-and-mountains-during-golden-hour-N1c4X5csoTg"
+    },
+    {
+      "title": "Landing Page Background 2",
+      "credit": "Javier Balseiro",
+      "creditUrl": "https://unsplash.com/@javier_balseiro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+      "imageUrl": "https://unsplash.com/photos/black-and-white-bottles-on-brown-wooden-shelf-jDU4yYk5Kgs"
+    },
+    {
+      "title": "Landing Page Background 3",
+      "credit": "Thomas Thompson",
+      "creditUrl": "https://unsplash.com/@tomthompsonphotography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+      "imageUrl": "https://unsplash.com/photos/five-upright-black-bottles-KEWVZAwkLxQ"
+    },
+    {
+      "title": "Wine Details Background",
+      "credit": "Ren Ran",
+      "creditUrl": "https://unsplash.com/@renran?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+      "imageUrl": "https://unsplash.com/photos/a-close-up-of-a-wall-with-lines-on-it-O-8Fmpx7HqQ"
+    }
+  ],
+  "libraryLicenses": [
+    {
+      "library": "Bootstrap",
+      "license": "MIT License",
+      "url": "https://github.com/twbs/bootstrap/blob/main/LICENSE"
+    },
+    {
+      "library": "Font Awesome",
+      "license": "CC BY 4.0",
+      "url": "https://fontawesome.com/license/free"
+    },
+    {
+      "library": "Google Fonts",
+      "license": "Open Font License",
+      "url": "https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web"
+    }
+  ],
+  "licenseInfo": "All image and background references are credited to their respective sources. External libraries are licensed as indicated in the Library Licenses section."
+}

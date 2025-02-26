@@ -1,0 +1,186 @@
+/* references.css */
+/* Assumes you have these CSS variables defined in your global CSS:
+   --bistre: #40210F;
+   --barn-red: #740000;
+   --bronze: #DDA52A;
+   --champagne-beige: #F5E6D3;
+*/
+
+.ref-page {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--champagne-beige);
+    color: var(--bistre);
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ref-page h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--barn-red);
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.ref-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.ref-section:hover {
+    transform: translateY(-5px);
+}
+
+.ref-section h2 {
+    font-size: 1.8rem;
+    color: var(--barn-red);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--bronze);
+    padding-bottom: 10px;
+}
+
+.ref-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ref-list li {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background 0.3s ease;
+}
+
+.ref-list li:last-child {
+    border-bottom: none;
+}
+
+.ref-list li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.ref-list a {
+    color: var(--barn-red);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ref-list a:hover {
+    color: var(--bronze);
+    text-decoration: underline;
+}
+
+.ref-license {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/*-----------------*/
+/*---- Footer -----*/
+/*-----------------*/
+.footer {
+    background-color: #740000; /* Dark Red Background */
+    color: white;
+    padding: 50px 0;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensures content is centered */
+    align-items: center;
+    min-height: 450px; /* Adjust this based on your footer height */
+    width: 100vw !important; /* Ensures full width */
+    max-width: 100% !important; /* Prevents it from getting constrained */
+}
+
+#details .footer {
+    width: 100vw !important; /* Ensures full width */
+    max-width: 100% !important; /* Prevents it from getting constrained */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns all headings at the same height */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+/* Ensures all footer columns align properly */
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    text-align: left; /* Ensures text alignment is consistent */
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem; /* Adjust icon size */
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: var(--bronze); /* Changes color on hover */
+}
+
+/* Fix the floating issue - Ensures it sticks to the bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-top: auto; /* Pushes footer-bottom to the bottom */
+    position: relative !important;
+    bottom: -50px !important;
+    left: 0;
+}
