@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap'); /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 /* High-Contrast Wine App Colors */
 :root {
     --bistre: #40210F; /* Backgrounds, Headers */
@@ -12,26 +13,29 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     background-color: #F5E6D3;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3 {
-    font-weight: 700; /* Bold for headings */
+    font-weight: 700;
 }
 
 p {
-    font-weight: 400; /* Regular for text */
+    font-weight: 400;
 }
 
 .btn {
-    font-weight: 600; /* Medium for buttons */
+    font-weight: 600;
 }
 
+/* Container Padding */
 .container {
     padding: 20px;
 }
 
 /*---------------------------*/
-/*---- Landing page css -----*/
+/*---- Landing Page CSS -----*/
 /*---------------------------*/
 .landing-container {
     position: relative;
@@ -53,32 +57,30 @@ p {
 }
 
 .landing-title {
-    font-size: 3.5rem; /* Bigger title */
-    font-weight: 700;
+    font-size: 3.5rem;
     text-transform: uppercase;
-    letter-spacing: 2px; /* Cleaner look */
+    letter-spacing: 2px;
 }
 
 .landing-subtitle {
-    font-size: 1.4rem; /* Slightly larger for clarity */
-    font-weight: 400;
+    font-size: 1.4rem;
     margin-bottom: 25px;
 }
 
 .btn-primary {
     background-color: var(--barn-red);
+    color: #F5E6D3;
     border: none;
     padding: 12px 25px;
     font-size: 1.2rem;
-    font-weight: 600;
     text-transform: uppercase;
-    border-radius: 50px; /* Rounded button */
+    border-radius: 50px;
     transition: 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
     background-color: darkred;
-    transform: scale(1.05); /* Slight lift effect */
+    transform: scale(1.05);
 }
 
 /*--------------------------*/
@@ -91,19 +93,18 @@ p {
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
     height: 100%;
     overflow-x: hidden;
 }
 
+/* Wine Header */
 .wine-header {
     width: 100%;
     height: 300px;
     background-image: url('../img/wine-header.jpg');
     background-size: cover;
     background-position: center;
-    position: relative; /* Ensures overlay is contained within */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,29 +112,23 @@ html, body {
     text-align: center;
     margin: 0;
     padding: 0;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Prevents overflow issues */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
-
-/* Dark overlay ONLY on the background image */
 .wine-header::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Ensures it only covers the header */
-    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-    z-index: 0; /* Keeps it behind text but above the image */
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
 }
-
-/* Ensures the text stays ABOVE the overlay */
 .wine-header-overlay {
     position: relative;
     z-index: 2;
 }
-
-/* Gradient text for title */
 .wine-header h2 {
     background: linear-gradient(135deg, var(--champagne-beige), var(--bronze));
     -webkit-background-clip: text;
@@ -143,37 +138,33 @@ html, body {
     position: relative;
     z-index: 2;
 }
-
-/* Subtitle stays white for readability */
 .wine-header p {
-    color: #F5E6D3 !important; /* Ensures text is readable */
+    color: #F5E6D3 !important;
     font-size: 1.2rem;
     margin-top: 10px;
     position: relative;
     z-index: 2;
 }
 
+/* Menu Background (Wine Collection) */
 .menu-background {
     background: linear-gradient(180deg, #F5E6D3, #EADAC6);
     width: 100%;
-    min-height: 100vh; /* Ensures it covers the whole page */
-    /*padding: 50px 0;*/
+    min-height: 100vh;
     margin: 0 !important;
     padding: 0 !important;
     position: relative;
 }
 
+/* Section Titles */
 .section-title {
     font-size: 2.5rem;
-    font-weight: 700;
     text-transform: uppercase;
     color: var(--bronze);
     margin-bottom: 10px;
 }
-
 .section-subtitle {
     font-size: 1.2rem;
-    font-weight: 400;
     color: #666;
     margin-bottom: 30px;
 }
@@ -182,10 +173,11 @@ html, body {
     max-width: 90%;
 }
 
+/* Wine Card in Collection */
 .wine-card {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     padding: 20px;
@@ -193,11 +185,9 @@ html, body {
     margin-bottom: 20px;
     border: 1px solid #ddd;
 }
-
 .wine-card:hover {
     transform: scale(1.03);
 }
-
 .wine-card img {
     width: 100%;
     height: 250px;
@@ -206,32 +196,24 @@ html, body {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
-
 .wine-card .wine-info {
     padding: 15px;
-    text-align: center;
 }
-
 .wine-card h5 {
-    font-weight: 700;
     font-size: 1.3rem;
-    margin-bottom: 5px;
     color: var(--bistre);
+    margin-bottom: 5px;
 }
-
 .wine-card p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 10px;
 }
-
 .wine-price {
     font-size: 1.2rem;
-    font-weight: 700;
     color: var(--barn-red);
     margin-bottom: 10px;
 }
-
 .btn-details {
     background-color: var(--barn-red);
     color: white;
@@ -242,7 +224,6 @@ html, body {
     border: none;
     transition: 0.3s;
 }
-
 .btn-details:hover {
     background-color: darkred;
 }
@@ -251,28 +232,26 @@ html, body {
 /*---- Footer -----*/
 /*-----------------*/
 .footer {
-    background-color: #740000; /* Dark Red Background */
+    background-color: #740000;
     color: white;
     padding: 50px 0;
     font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Ensures content is centered */
+    justify-content: center;
     align-items: center;
-    min-height: 450px; /* Adjust this based on your footer height */
-    width: 100vw !important; /* Ensures full width */
-    max-width: 100% !important; /* Prevents it from getting constrained */
+    min-height: 450px;
+    width: 100vw !important;
+    max-width: 100% !important;
 }
-
 #details .footer {
-    width: 100vw !important; /* Ensures full width */
-    max-width: 100% !important; /* Prevents it from getting constrained */
+    width: 100vw !important;
+    max-width: 100% !important;
 }
-
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Aligns all headings at the same height */
+    align-items: flex-start;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -280,67 +259,54 @@ html, body {
     padding: 0 20px;
     gap: 50px;
 }
-
-/* Ensures all footer columns align properly */
 .footer-column {
     flex: 1;
     min-width: 250px;
-    text-align: left; /* Ensures text alignment is consistent */
+    text-align: left;
 }
-
 .footer-column h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-
 .footer-column p {
     font-size: 1rem;
     line-height: 1.5;
 }
-
 .footer-column ul {
     list-style: none;
     padding: 0;
 }
-
 .footer-column ul li {
     margin-bottom: 10px;
 }
-
 .footer-column ul li a {
     color: white;
     text-decoration: none;
     transition: 0.3s;
 }
-
 .footer-column ul li a:hover {
     text-decoration: underline;
 }
-
 .social-icons {
     display: flex;
-    gap: 15px; /* Spacing between icons */
+    gap: 15px;
     margin-top: 10px;
 }
-
 .social-icons a {
     color: white;
-    font-size: 1.5rem; /* Adjust icon size */
+    font-size: 1.5rem;
     transition: color 0.3s ease-in-out;
 }
-
 .social-icons a:hover {
-    color: var(--bronze); /* Changes color on hover */
+    color: var(--bronze);
 }
-
-/* Fix the floating issue - Ensures it sticks to the bottom */
 .footer-bottom {
     text-align: center;
     padding: 15px 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0,0,0,0.2);
     width: 100%;
-    margin-top: auto; /* Pushes footer-bottom to the bottom */
+    margin-top: auto;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -349,8 +315,6 @@ html, body {
 /*-----------------------*/
 /*---- Wine Details -----*/
 /*-----------------------*/
-
-/* Container for the Wine Details Page */
 .wine-details-container {
     width: 100vw;
     min-height: 100vh;
@@ -362,8 +326,6 @@ html, body {
     padding: 0;
     position: relative;
 }
-
-/* 'Go Back' Button */
 .btn-back {
     color: white;
     background-color: transparent;
@@ -378,8 +340,6 @@ html, body {
     margin: 45px;
     font-size: 1.7rem !important;
 }
-
-/* Main Layout for Wine Details (Image + Info) */
 .wine-details-content {
     display: flex;
     flex-direction: row;
@@ -389,28 +349,21 @@ html, body {
     flex-wrap: wrap;
     margin-top: 20px;
 }
-
-/* Wine Image Styling */
 .wine-image img {
-    height: 500px;  /* Fixed height for uniform bottle images */
-    width: auto;    /* Maintain aspect ratio */
+    height: 500px;
+    width: auto;
     object-fit: contain;
     border: none;
     border-radius: 0;
     box-shadow: none;
 }
-
-/* Wine Info Container with Champagne Background */
 .wine-info-view {
     max-width: 600px;
     background-color: var(--champagne-beige);
     padding: 40px;
     margin-left: 10px;
-    /*border-radius: 10px;*/
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
-/* Wine Name Styling with Playfair Display and Barn Red */
 .wine-name {
     font-family: "Playfair Display", serif;
     color: var(--barn-red);
@@ -418,8 +371,6 @@ html, body {
     margin-bottom: 20px;
     text-transform: capitalize;
 }
-
-/* Wine Stats (Year, Region, Type) */
 .wine-stats {
     margin-bottom: 20px;
 }
@@ -428,22 +379,16 @@ html, body {
     color: #333;
     margin: 5px 0;
 }
-
-/* Wine Description */
 .wine-description {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
 }
-
-/* Wine Rating */
 .wine-rating {
     margin-top: 10px;
     font-size: 1.2rem;
 }
-
-/* Wine Top Notes */
 .wine-top-notes {
     margin-top: 20px;
     display: flex;
@@ -457,8 +402,6 @@ html, body {
     font-size: 1rem;
     color: var(--bistre);
 }
-
-/* Additional Highlights (Optional) */
 .wine-highlights {
     display: flex;
     gap: 20px;
@@ -474,27 +417,3 @@ html, body {
     font-size: 1.2rem;
     color: var(--bronze);
 }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .wine-details-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .wine-image img {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 20px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-

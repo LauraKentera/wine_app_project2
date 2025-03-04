@@ -1,47 +1,61 @@
+/* =========================
+   For screens up to 768px
+   ========================= */
 @media (max-width: 768px) {
+    /* Landing Page: Tablet Background */
     .landing-container {
         background-image: url('../img/landing-tablet.jpg');
-        background-position: top center; /* Adjusted for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .landing-container {
-        background-image: url('../img/landing-mobile.jpg');
         background-position: top center;
     }
 
-    .landing-title {
-        font-size: 2.5rem; /* Smaller title for mobile */
-    }
-
-    .landing-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .btn-primary {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-}
-
-
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .wine-details-content {
+    /* Wine Details: Use Portrait Background */
+    .wine-details-container {
+        background: url('../img/wine_details_portrait.jpg') center center / cover no-repeat !important;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0 0 30px;
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 0;
     }
+
+    /* Stack Wine Details Content Vertically */
+    .wine-details-content {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Wine Image Scaling */
     .wine-image img {
         width: 100%;
         max-width: 300px;
-        margin-bottom: 20px;
+        margin-bottom: -20px;
     }
-}
 
+    /* Wine Info View: Ensure proper stacking */
+    .wine-info-view {
+        width: 100%;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
 
-@media (max-width: 768px) {
+    /* Adjust Back Button */
+    .btn-back i {
+        font-size: 30px !important;
+    }
+    .btn-back {
+        margin-left: 15px !important;
+    }
+
+    /* References Page Adjustments */
     .ref-page {
         padding: 40px 10px;
     }
@@ -50,5 +64,132 @@
     }
     .ref-section h2 {
         font-size: 1.5rem;
+    }
+
+    /* Footer Bottom: Remove Absolute Positioning */
+    .footer-bottom {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 20px;
+    }
+
+    /* Flex Layout for Full-Height on Mobile */
+    html, body {
+        height: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    #menu, #details {
+        flex: 1;
+    }
+    .footer {
+        flex-shrink: 0;
+    }
+}
+
+/* =========================
+   For screens up to 480px
+   ========================= */
+@media (max-width: 480px) {
+    /* Landing Page: Mobile Background */
+    .landing-container {
+        background-image: url('../img/landing-mobile.jpg');
+        background-position: top center;
+    }
+
+    .landing-title {
+        font-size: 2.5rem;
+    }
+    .landing-subtitle {
+        font-size: 1.1rem;
+    }
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .btn-back i {
+        font-size: 30px !important;
+    }
+    .btn-back {
+        margin-left: 15px !important;
+    }
+
+    /* Wine Details Container remains same as 768px settings */
+    .wine-details-container {
+        background: url('../img/wine_details_portrait.jpg') center center / cover no-repeat !important;
+        height: 500px;
+        margin: 0;
+        padding: 0 0 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 0;
+    }
+
+    /* Wine Details Content: Center and limit width */
+    .wine-details-content {
+        width: 90%;
+        max-width: 600px;
+        /*max-height: 500px;*/
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Wine Image Scaling */
+    .wine-image img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: -20px;
+    }
+
+    /* Wine Info View: Ensure proper stacking */
+    .wine-info-view {
+        width: 100%;
+        justify-self: center;
+        /*margin-top: 20px;*/
+    }
+
+    .wine-card {
+        max-width: 260px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    /* Refrences */
+    .ref-page {
+        padding: 30px 10px;
+        max-width: 95%;
+    }
+
+    .ref-page h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .ref-section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .ref-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .ref-list li {
+        padding: 10px 12px;
+    }
+
+    .ref-license {
+        padding: 15px;
+        font-size: 0.9rem;
     }
 }

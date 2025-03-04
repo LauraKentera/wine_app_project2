@@ -86,7 +86,6 @@ This project is a dynamic, data-driven mobile web app that showcases a curated c
 - **Image Credits:**  
   All images used are referenced in the `references.json` file, with appropriate links to the original sources.
 - **External Libraries:**
-    - **Bootstrap:** Licensed under MIT.
     - **Font Awesome:** Licensed under CC BY 4.0 (Free version).
     - **Google Fonts:** Licensed under the Open Font License.
 - **Background and Additional Resources:**  
